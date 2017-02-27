@@ -5,20 +5,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>STEM GREENHOUSE </title>
-		<meta name="description" content="Responsive, Mobile First, Bootstrap 3, Agency, Clean, Creative, Photography, Portfolio, Business, Corporate, Dark, Modern">
-		<meta name="author" content="Vardo">
 		<link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
-		<link rel="icon" type="image/ico" href="favicon.png">
-		<link rel="apple-touch-icon" href="apple-touch-icon.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
-		<link rel="image_src" href="thumbnail.png">
-		<link href="css/style-theme.css" rel="stylesheet">
+		<link rel="stylesheet" type='type/css' href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" type='type/css' href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel="stylesheet" type='type/css' href="{{ url_for('static', filename='font-awesome.min.css') }}">
+    <link rel="stylesheet" type='type/css' href="{{ url_for('static', filename='jquery.fs.boxer.css') }}">
+    <link rel="stylesheet" type='type/css' href="{{ url_for('static', filename='style-theme.css') }}">
 	</head>
 	<body>
-	
+
 		<!-- BEGIN Preloader -->
 		<div class="preloader">
 			<div class="spinner">
@@ -28,12 +25,12 @@
 			</div>
 		</div>
 		<!-- END Preloader -->
-		
+
 		<!-- BEGIN Intro -->
 		<div class="intro" id="intro" style="background-image:url(http://raspberry.piaustralia.com.au/product-images/pifront.jpg);">
-		
+
 			<div class="layer-bg"></div>
-			
+
 			<div class="float-content">
 				<div class="header-site">
 					<div class="container">
@@ -41,7 +38,7 @@
 							<div class="col-md-12">
 								<div class="logo-site">
 									<a href="#0">
-										<img src="images/logo.png" alt="" title="" />
+										<!-- <img src="images/logo.png" alt="" title="" /> -->
 									</a>
 								</div>
 							</div>
@@ -74,7 +71,7 @@
 			</div>
 		</div>
 		<!-- END Intro -->
-		
+
 		<!-- BEGIN Content -->
 		<div class="content-site">
 			<div class="container-fluid beforebg">
@@ -94,14 +91,14 @@
 					<div class="col-md-4">
 						<div class="row">
 							<div class="showcase-item">
-								<img src="images/placeholder-600x600.jpg" alt="" title="" />
+								<img src= alt="" title="" />
 								<div class="showcase-hidden">
 									<div class="float-content">
 										<div class="name-project">
-											<h3>Paper</h3>
+											<h3>Graph</h3>
 										</div>
 										<div class="show-btn">
-											<a href="images/placeholder-600x600.jpg" class="boxer" data-gallery="gallery">
+											<a href= class="boxer" data-gallery="gallery">
 												<i class="fa fa-search-plus"></i>
 											</a>
 										</div>
@@ -113,14 +110,34 @@
 					<div class="col-md-4">
 						<div class="row">
 							<div class="showcase-item">
-								<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Aviacionavion.png/600px-Aviacionavion.png" alt="" title="" />
+								<img src={{ url_for('static', filename='images/humidchart.svg') }} alt="" title="" />
 								<div class="showcase-hidden">
 									<div class="float-content">
 										<div class="name-project">
 											<h3>Airplane</h3>
 										</div>
 										<div class="show-btn">
-											<a href="images/placeholder-600x600.jpg" class="boxer" data-gallery="gallery">
+											<a href={{ url_for('static', filename='images/humidchart.svg') }} class="boxer" data-gallery="gallery">
+												<i class="fa fa-search-plus"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+          <!-- <img src={{ url_for('static', filename='images/tempchart.svg') }} alt="" title="" /> -->
+					<div class="col-md-4">
+						<div class="row">
+							<div class="showcase-item">
+								<img src={{ url_for('static', filename='images/tempchart.svg') }} alt="" title="" />
+								<div class="showcase-hidden">
+									<div class="float-content">
+										<div class="name-project">
+											<h3>Graph</h3>
+										</div>
+										<div class="show-btn">
+											<a href="{{ url_for('static', filename='images/tempchart.svg') }}" class="boxer" data-gallery="gallery">
 												<i class="fa fa-search-plus"></i>
 											</a>
 										</div>
@@ -132,14 +149,14 @@
 					<div class="col-md-4">
 						<div class="row">
 							<div class="showcase-item">
-								<img src="images/placeholder-600x600.jpg" alt="" title="" />
+								<img src="https://placeholdit.imgix.net/~text?txtsize=56&txt=600%C3%97600&w=600&h=600" alt="" title="" />
 								<div class="showcase-hidden">
 									<div class="float-content">
 										<div class="name-project">
 											<h3>Mock Up</h3>
 										</div>
 										<div class="show-btn">
-											<a href="images/placeholder-600x600.jpg" class="boxer" data-gallery="gallery">
+											<a href="https://placeholdit.imgix.net/~text?txtsize=56&txt=600%C3%97600&w=600&h=600" class="boxer" data-gallery="gallery">
 												<i class="fa fa-search-plus"></i>
 											</a>
 										</div>
@@ -151,14 +168,14 @@
 					<div class="col-md-4">
 						<div class="row">
 							<div class="showcase-item">
-								<img src="images/placeholder-600x600.jpg" alt="" title="" />
+								<img src="https://placeholdit.imgix.net/~text?txtsize=56&txt=600%C3%97600&w=600&h=600" alt="" title="" />
 								<div class="showcase-hidden">
 									<div class="float-content">
 										<div class="name-project">
 											<h3>Mock Up</h3>
 										</div>
 										<div class="show-btn">
-											<a href="images/placeholder-600x600.jpg" class="boxer" data-gallery="gallery">
+											<a href="https://placeholdit.imgix.net/~text?txtsize=56&txt=600%C3%97600&w=600&h=600" class="boxer" data-gallery="gallery">
 												<i class="fa fa-search-plus"></i>
 											</a>
 										</div>
@@ -170,14 +187,14 @@
 					<div class="col-md-4">
 						<div class="row">
 							<div class="showcase-item">
-								<img src="images/placeholder-600x600.jpg" alt="" title="" />
+								<img src="https://placeholdit.imgix.net/~text?txtsize=56&txt=600%C3%97600&w=600&h=600" alt="" title="" />
 								<div class="showcase-hidden">
 									<div class="float-content">
 										<div class="name-project">
 											<h3>Mock Up</h3>
 										</div>
 										<div class="show-btn">
-											<a href="images/placeholder-600x600.jpg" class="boxer" data-gallery="gallery">
+											<a href="https://placeholdit.imgix.net/~text?txtsize=56&txt=600%C3%97600&w=600&h=600" class="boxer" data-gallery="gallery">
 												<i class="fa fa-search-plus"></i>
 											</a>
 										</div>
@@ -189,33 +206,14 @@
 					<div class="col-md-4">
 						<div class="row">
 							<div class="showcase-item">
-								<img src="images/placeholder-600x600.jpg" alt="" title="" />
-								<div class="showcase-hidden">
-									<div class="float-content">
-										<div class="name-project">
-											<h3>Mock Up</h3>
-										</div>
-										<div class="show-btn">
-											<a href="images/placeholder-600x600.jpg" class="boxer" data-gallery="gallery">
-												<i class="fa fa-search-plus"></i>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="row">
-							<div class="showcase-item">
-								<img src="images/placeholder-600x600.jpg" alt="" title="" />
+								<img src="https://placeholdit.imgix.net/~text?txtsize=56&txt=600%C3%97600&w=600&h=600" alt="" title="" />
 								<div class="showcase-hidden">
 									<div class="float-content">
 										<div class="name-project">
 											<h3>Woody</h3>
 										</div>
 										<div class="show-btn">
-											<a href="images/placeholder-600x600.jpg" class="boxer" data-gallery="gallery">
+											<a href="https://placeholdit.imgix.net/~text?txtsize=56&txt=600%C3%97600&w=600&h=600" class="boxer" data-gallery="gallery">
 												<i class="fa fa-search-plus"></i>
 											</a>
 										</div>
@@ -227,14 +225,14 @@
 					<div class="col-md-4">
 						<div class="row">
 							<div class="showcase-item">
-								<img src="images/placeholder-600x600.jpg" alt="" title="" />
+								<img src="https://placeholdit.imgix.net/~text?txtsize=56&txt=600%C3%97600&w=600&h=600" alt="" title="" />
 								<div class="showcase-hidden">
 									<div class="float-content">
 										<div class="name-project">
 											<h3>Interface</h3>
 										</div>
 										<div class="show-btn">
-											<a href="images/placeholder-600x600.jpg" class="boxer" data-gallery="gallery">
+											<a href="https://placeholdit.imgix.net/~text?txtsize=56&txt=600%C3%97600&w=600&h=600" class="boxer" data-gallery="gallery">
 												<i class="fa fa-search-plus"></i>
 											</a>
 										</div>
@@ -246,14 +244,14 @@
 					<div class="col-md-4">
 						<div class="row">
 							<div class="showcase-item">
-								<img src="images/placeholder-600x600.jpg" alt="" title="" />
+								<img src="https://placeholdit.imgix.net/~text?txtsize=56&txt=600%C3%97600&w=600&h=600" alt="" title="" />
 								<div class="showcase-hidden">
 									<div class="float-content">
 										<div class="name-project">
 											<h3>Business</h3>
 										</div>
 										<div class="show-btn">
-											<a href="images/placeholder-600x600.jpg" class="boxer" data-gallery="gallery">
+											<a href="https://placeholdit.imgix.net/~text?txtsize=56&txt=600%C3%97600&w=600&h=600" class="boxer" data-gallery="gallery">
 												<i class="fa fa-search-plus"></i>
 											</a>
 										</div>
@@ -360,7 +358,7 @@
 						<div class="row">
 							<div class="col-md-3">
 								<div class="team-item">
-									<img src="images/placeholder-600x750.jpg" alt="" title="" />
+									<img src="https://placeholdit.imgix.net/~text?txtsize=56&txt=600%C3%97750&w=600&h=750" alt="" title="" />
 									<div class="item-hidden">
 										<div class="float-content">
 											<div class="name-staff">
@@ -374,7 +372,7 @@
 							</div>
 							<div class="col-md-3">
 								<div class="team-item">
-									<img src="images/placeholder-600x750.jpg" alt="" title="" />
+									<img src="https://placeholdit.imgix.net/~text?txtsize=56&txt=600%C3%97750&w=600&h=750" alt="" title="" />
 									<div class="item-hidden">
 										<div class="float-content">
 											<div class="name-staff">
@@ -388,7 +386,7 @@
 							</div>
 							<div class="col-md-3">
 								<div class="team-item">
-									<img src="images/placeholder-600x750.jpg" alt="" title="" />
+									<img src="https://placeholdit.imgix.net/~text?txtsize=56&txt=600%C3%97750&w=600&h=750" alt="" title="" />
 									<div class="item-hidden">
 										<div class="float-content">
 											<div class="name-staff">
@@ -403,7 +401,7 @@
 							</div>
 							<div class="col-md-3">
 								<div class="team-item">
-									<img src="images/placeholder-600x750.jpg" alt="" title="" />
+									<img src="https://placeholdit.imgix.net/~text?txtsize=56&txt=600%C3%97750&w=600&h=750" alt="" title="" />
 									<div class="item-hidden">
 										<div class="float-content">
 											<div class="name-staff">
@@ -433,7 +431,7 @@
 			</div>
 		</div>
 		<!-- END Content -->
-		
+
 		<!-- BEGIN Social -->
 		<div class="social-links">
 			<div class="container-fluid">
@@ -453,7 +451,7 @@
 			</div>
 		</div>
 		<!-- END Social -->
-				
+
 		<!-- BEGIN Rights -->
 		<div class="rights">
 			<div class="container">
@@ -467,14 +465,12 @@
 			</div>
 		</div>
 		<!-- END Rights -->
-		
-		<script type="text/javascript" src="js/jquery-1.11.min.js"></script>
-		<script type="text/javascript" src="js/SmoothScroll.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/jquery.fs.boxer.min.js"></script>
-		<script type="text/javascript" src="js/jquery.form.js"></script>
-		<script type="text/javascript" src="js/custom.js"></script>
+
+		<script type="text/javascript" src="{{ url_for ('static', filename='js/jquery-1.11.min.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for ('static', filename='js/SmoothScroll.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for ('static', filename='js/bootstrap.min.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for ('static', filename='js/jquery.fs.boxer.min.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for ('static', filename='js/jquery.form.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for ('static', filename='js/custom.js') }}"></script>
 	</body>
 </html>
-
-

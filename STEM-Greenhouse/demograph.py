@@ -7,7 +7,7 @@ import random
 TIMESTORAGE = []
 for x in range(0,9):
     TIMESTORAGE.append(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
-    sleep(10)
+    sleep(1)
     print("time added")
 
 TEMPSTORAGE_1 = []
@@ -39,7 +39,7 @@ TEMP_CHART.add('Sensor 1', TEMPSTORAGE_1)
 TEMP_CHART.add('Sensor 2', TEMPSTORAGE_2)
 TEMP_CHART.add('Sensor 3', TEMPSTORAGE_3)
 TEMP_CHART.add('Sensor 4', TEMPSTORAGE_4)
-TEMP_CHART.render_to_png('/home/aegon/Documents/STEM-Greenhouse/demotempchart.png')
+TEMP_CHART.render_to_file('/home/aegon/STEM-Greenhouse/STEM-Greenhouse/demotempchart.svg')
 
 HUMID_CHART = pygal.Line(style=DarkStyle, width=1600, height=800, range=(20, 91))
 HUMID_CHART.title = 'Humidity Chart for the Last Hour'
@@ -48,4 +48,4 @@ HUMID_CHART.add('Sensor 1', HUMIDSTORAGE_1)
 HUMID_CHART.add('Sensor 2', HUMIDSTORAGE_2)
 HUMID_CHART.add('Sensor 3', HUMIDSTORAGE_3)
 HUMID_CHART.add('Sensor 4', HUMIDSTORAGE_4)
-HUMID_CHART.render_to_png('/home/aegon/Documents/STEM-Greenhouse/demohumidchart.png')
+HUMID_CHART.render_to_file('/home/aegon/STEM-Greenhouse/STEM-Greenhouse/demohumidchart.svg')

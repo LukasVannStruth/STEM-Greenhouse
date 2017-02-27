@@ -1,0 +1,27 @@
+2017-02-23 10:07:55,467 * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-02-23 10:10:30,943 * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-02-23 10:10:43,851 * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-02-23 10:10:43,875 * Restarting with stat
+2017-02-23 10:10:44,204 * Debugger is active!
+2017-02-23 10:10:44,215 * Debugger pin code: 257-455-926
+2017-02-23 10:11:19,534127.0.0.1 - - [23/Feb/2017 10:11:19] "GET / HTTP/1.1" 200 -
+2017-02-23 10:11:19,733127.0.0.1 - - [23/Feb/2017 10:11:19] "GET /css/style-theme.css HTTP/1.1" 404 -
+2017-02-23 10:11:19,734127.0.0.1 - - [23/Feb/2017 10:11:19] "GET /js/jquery-1.11.min.js HTTP/1.1" 404 -
+2017-02-23 10:11:19,785127.0.0.1 - - [23/Feb/2017 10:11:19] "GET /js/bootstrap.min.js HTTP/1.1" 404 -
+2017-02-23 10:11:19,791127.0.0.1 - - [23/Feb/2017 10:11:19] "GET /js/jquery.fs.boxer.min.js HTTP/1.1" 404 -
+2017-02-23 10:11:19,805127.0.0.1 - - [23/Feb/2017 10:11:19] "GET /js/SmoothScroll.js HTTP/1.1" 404 -
+2017-02-23 10:11:19,810127.0.0.1 - - [23/Feb/2017 10:11:19] "GET /js/jquery.form.js HTTP/1.1" 404 -
+2017-02-23 10:11:19,811127.0.0.1 - - [23/Feb/2017 10:11:19] "GET /js/custom.js HTTP/1.1" 404 -
+2017-02-23 10:11:19,815127.0.0.1 - - [23/Feb/2017 10:11:19] "GET /images/logo.png HTTP/1.1" 404 -
+2017-02-23 10:11:19,846127.0.0.1 - - [23/Feb/2017 10:11:19] "GET /images/humidgraph.svg HTTP/1.1" 404 -
+2017-02-23 10:11:19,847127.0.0.1 - - [23/Feb/2017 10:11:19] "GET /images/tempchart.svg HTTP/1.1" 404 -
+2017-02-23 10:11:19,851127.0.0.1 - - [23/Feb/2017 10:11:19] "GET /images/placeholder-600x750.jpg HTTP/1.1" 404 -
+2017-02-23 10:11:19,853127.0.0.1 - - [23/Feb/2017 10:11:19] "GET /images/placeholder-600x600.jpg HTTP/1.1" 404 -
+2017-02-23 10:11:19,871127.0.0.1 - - [23/Feb/2017 10:11:19] "GET /js/bootstrap.min.js HTTP/1.1" 404 -
+2017-02-23 10:11:19,879127.0.0.1 - - [23/Feb/2017 10:11:19] "GET /js/jquery.fs.boxer.min.js HTTP/1.1" 404 -
+2017-02-23 10:11:19,884127.0.0.1 - - [23/Feb/2017 10:11:19] "GET /js/jquery.form.js HTTP/1.1" 404 -
+2017-02-23 10:11:19,889127.0.0.1 - - [23/Feb/2017 10:11:19] "GET /js/custom.js HTTP/1.1" 404 -
+2017-02-23 10:11:20,334127.0.0.1 - - [23/Feb/2017 10:11:20] "GET /favicon.png HTTP/1.1" 404 -
+2017-02-23 10:11:38,565 * Detected change in '/home/aegon/STEM-Greenhouse/STEM-Greenhouse/data.py', reloading
+2017-02-23 10:11:38,631 * Restarting with stat
+2017-02-23 10:18:32,757 * Restarting with stat

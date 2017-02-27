@@ -10,9 +10,9 @@ import pygal
 import logging
 
 #Configuring Logging
-#logging.basicConfig(filename='data.log', level=logging.DEBUG,
-#format='%(asctime)s' '%(message)s')
-
+logging.basicConfig(filename='data.log', level=logging.DEBUG,
+format='%(asctime)s' '%(message)s')
+logging.info('------------------------------------------------------------------------')
 #Establishing the Data Sources for the data
 DATA_SOURCE = {
     "T1" : 'TempSen1', "T2" : 'TempSen2', "T3" : 'TempSen3', "T4" : 'TempSen4',
@@ -196,6 +196,7 @@ def start_reading_data():
         for x in WTEMPSTORAGE:
             WTEMPFILE.write(x)
 
+#Fix graph paths for final deployment
         TEMP_CHART = pygal.Line(style=DarkStyle, width=1600, height=800,
         range=(0, 31))
         TEMP_CHART.title = 'Temperature Chart for the Last Hour'
@@ -204,7 +205,7 @@ def start_reading_data():
         TEMP_CHART.add('Sensor 2', TEMPSTORAGE_2)
         TEMP_CHART.add('Sensor 3', TEMPSTORAGE_3)
         TEMP_CHART.add('Sensor 4', TEMPSTORAGE_4)
-        TEMP_CHART.render_to_png('/home/aegon/Documents/STEM-Greenhouse/templates/tempchart.png')
+        TEMP_CHART.render_to_file('~/STEM-Greenhouse/static/images/tempchart.svg')
 
         HUMID_CHART = pygal.Line(style=DarkStyle, width=1600, height=800,
         range=(0, 101))
@@ -214,7 +215,7 @@ def start_reading_data():
         HUMID_CHART.add('Sensor 2', HUMIDSTORAGE_2)
         HUMID_CHART.add('Sensor 3', HUMIDSTORAGE_3)
         HUMID_CHART.add('Sensor 4', HUMIDSTORAGE_4)
-        HUMID_CHART.render_to_png('/home/aegon/Documents/STEM-Greenhouse/templates/humidchart.png')
+        HUMID_CHART.render_to_file('~/STEM-Greenhouse/static/images/humidchart.svg')
 
         HUMIDSTORAGE_1.clear()
         HUMIDSTORAGE_3.clear()
